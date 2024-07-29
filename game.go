@@ -81,8 +81,9 @@ func (g *Game) Start() {
 	g.StartCtx(context.Background())
 }
 
-// Start starts a Game running. This should be the last thing called in your
+// StartCtx starts a Game running. This should be the last thing called in your
 // main function. By default, the escape key exits.
+// Can provide a context that can be cancelled
 func (g *Game) StartCtx(ctx context.Context) {
 	// Init Termbox
 	err := termbox.Init()
