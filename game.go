@@ -3,6 +3,7 @@ package termloop
 import (
 	"context"
 	"fmt"
+        "github.com/nsf/termbox-go"
 	"time"
 )
 
